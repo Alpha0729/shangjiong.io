@@ -1,0 +1,103 @@
+﻿@charset "utf-8";
+/* CSS Document */
+*{
+	margin:0px;
+	padding:0px;
+}
+.box{
+    overflow: hidden;
+    padding-bottom: 3rem;
+}
+.img_b{
+    display:inline;
+}
+h5{
+    display:inline;
+    font-weight:bold;
+}
+.lv{
+    margin: 0 auto;
+    width: 6rem;
+    line-height: 4rem;
+	font-weight:bold;
+}
+.cont{
+    /*margin-top:7rem;*/
+}
+.s_name{
+    font-weight:bold;
+	margin-top:1rem;
+	float: right;
+}
+.for{
+    padding-bottom:2rem;
+}
+.btn{
+    width: 90%;
+    margin-left: 3.5rem;
+}
+.s_from{
+	background:rgba(255, 255, 255, 0.2); 
+	padding-top:4rem;
+	padding-bottom:3em;
+	padding-right: 3rem;
+}
+h3{
+    /*color: #fff;
+	padding-bottom:3rem;*/
+	font-weight: bold;
+    text-align: center;
+}
+h5{
+    font-weight: bold;
+    color: #d9534f; 
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus {
+    color: #555;
+    cursor: default;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-bottom-color: #ddd;
+}
+.table{
+    margin-top:1rem;
+}
+
+
+@media screen and (max-width:1024px) and (min-width: 768px) {
+.for {
+    padding-bottom: 2rem;
+    padding-right: 8rem;
+}
+.btn {
+    width: 75%;
+    margin-left: 10rem;
+}
+ }
+.col-sm-2{
+    padding:0;
+    font-size:12px;
+}
+.nav-tabs>li.active>a{
+    margin: .5rem 1rem;
+    cursor: pointer;
+}
+.nav-tabs li a{
+    border:none;
+    margin: 0;
+    cursor:pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

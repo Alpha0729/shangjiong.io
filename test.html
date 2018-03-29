@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<form action="javaScript:;" method="post" id="app">
+    <div>
+        <input type="button" @click="btn1" value="我是一个按钮100">
+        <input type="button" @click="btn2" value="我是一个按钮200">
+        <input type="button" @click="btn3" value="我是一个按钮300">
+        <input type="button" @click="btn4" value="我是一个按钮400">
+        <input type="button" @click="btn5" value="我是一个按钮500">
+        <input type="button" @click="btn6" value="我是一个按钮600">
+    </div>
+    <br>
+    <div>
+        <span>我是只管分割的</span>
+    </div>
+    <br>
+    <div>
+        <input type="button" value="我是第二组按钮" v-model="a" @click="btnT">
+        <input type="button" value="我是第二组按钮" v-model="b" @click="btnB">
+        <div>{{a}} <span></span>{{b}}</div>
+        <div><button>乘以10：{{aa}}</button><button>乘以20：{{aa}}</button></div>
+    </div>
+</form>
+</body>
+<script src="pulic_js/jquery.js"></script>
+<script src="pulic_js/vue.js"></script>
+<script>
+    var app=new Vue({
+        el:'#app',
+        data:{
+            a:100
+            ,b:100
+            ,aa:100
+        },
+        computed:{
+            /*btn1:function () {
+                this.a=2100;
+            },
+            btn2:function () {
+                alert(1)
+                this.a=this.a*2
+            }*/
+        },
+        methods:{
+            btnT:function () {
+                this.aa=100;
+                this.aa=this.a*10;
+            },
+            btnB:function () {
+                this.aa=100;
+                this.aa=this.a*20;
+            },
+            btn1:function () {
+                this.a=100;
+                this.b=100;
+            },
+            btn2:function () {
+                this.a=100;
+                this.b=100;
+                this.a=this.a*2;
+                this.b=this.b*2;
+            },
+            btn3:function () {
+                this.a=100;
+                this.b=100;
+                this.a=this.a*3;
+                this.b=this.b*3;
+            },
+            btn4:function () {
+                this.a=100;
+                this.b=100;
+                this.a=this.a*4;
+                this.b=this.b*4;
+            },
+            btn5:function () {
+                this.a=100;
+                this.b=100;
+                this.a=this.a*5;
+                this.b=this.b*5;
+            },
+            btn6:function () {
+                this.a=100;
+                this.b=100;
+                this.a=this.a*6;
+                this.b=this.b*6;
+            }
+        }
+    })
+</script>
+</html>

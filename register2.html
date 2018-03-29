@@ -1,0 +1,312 @@
+﻿<!doctype html>
+<html>
+ <head>
+   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0,user-scalable=no,minimal-ui">
+   <link href="pulic_css/bootstrap.min.css" rel="stylesheet">
+   <script src="pulic_js/jquery.js"></script>
+   <script src="pulic_js/bootstrap.min.js"></script>
+
+   <link href="css/register.css" rel="stylesheet"/>
+   <title>预留信息</title>
+ </head>
+ <body>
+   <div class="box">
+	   <!--导航开始-->
+	   <div class="container-fulid">
+
+		   <div class="row">
+			   <div class="col-xs-5">
+				   <img src="images/logo.png" class="img_b img-responsive"/>
+				   <h5 style="color:#040404;">正德金融集团</h5>
+			   </div>
+			   <div class="col-xs-2">
+				   <p class="lv" style="color:#ffff;"></p>
+			   </div>
+			   <div class="col-xs-5"></div>
+		   </div>
+
+	   </div>
+	   <!--导航结束-->
+	   <div class="container cont">
+		   <h3>预留信息</h3>
+
+		   <div class="row " id="app3">
+			   <div class="col-md-4"></div>
+			   <div class="col-md-4 s_from">
+				   <div class="row for">
+					   <div class="col-xs-3">
+						   <div class="s_name">
+							   姓名:
+						   </div>
+					   </div>
+					   <div class="col-xs-9">
+						   <input class="form-control" type="text" placeholder="请输入您的姓名"/>
+					   </div>
+				   </div>
+
+				   <div class="row for">
+					   <div class="col-xs-3">
+						   <div class="s_name">
+							   电话:
+						   </div>
+					   </div>
+					   <div class="col-xs-9">
+						   <input class="form-control" maxlength="11" placeholder="请输入您的电话" value="" v-bind="userName"/> <span v-if="userName.length>1"></span>
+					   </div>
+				   </div>
+
+				   <div class="row for">
+					   <div class="col-xs-3">
+						   <div class="s_name">
+							   邮箱:
+						   </div>
+					   </div>
+					   <div class="col-xs-9">
+						   <input class="form-control" type="email" placeholder="请输入您的邮箱"/>
+					   </div>
+				   </div>
+
+
+				   <div class="row for">
+					   <div class="col-xs-3">
+						   <div class="s_name">
+							   地址:
+						   </div>
+					   </div>
+					   <div class="col-xs-9">
+						   <input class="form-control" type="num" placeholder="请输入您的地址"/>
+					   </div>
+				   </div>
+
+				   <div class="row">
+					   <div class="col-xs-12">
+						   <button class="btn btn-danger">提交</button>
+					   </div>
+				   </div>
+
+			   </div>
+			   <div class="col-md-4"></div>
+		   </div>
+	   </div>
+
+	   <div class="container" id="app2">
+		   <h3>商品期货</h3>
+
+		   <h5>选择基金</h5>
+
+		   <div class="">
+			   <ul id="myTab2" class="nav nav-tabs">
+				   <li class="col-sm-2" style="text-align:center;">
+					   <a href="javaScript:;"  @click="click1()" >
+						   <span>1万元</span>
+						   <div>(实盘资金)</div>
+					   </a>
+				   </li>
+				   <li class="col-sm-2 " style="text-align:center;" >
+					   <a href="javaScript:;" @click="click2()" data-toggle="tab" >
+						   <span>2万元</span>
+						   <div>(实盘资金)</div>
+					   </a>
+				   </li>
+				   <li class="col-sm-2 " style="text-align:center;" >
+					   <a href="javaScript:;" @click="click3()" data-toggle="tab" >
+						   <span>3万元</span>
+						   <div>(实盘资金)</div>
+					   </a>
+				   </li>
+				   <li class="col-sm-2 " style="text-align:center;" >
+					   <a href="javaScript:;" @click="click4()" data-toggle="tab" >
+						   <span>4万元</span>
+						   <div>(实盘资金)</div>
+					   </a>
+				   </li>
+				   <li class="col-sm-2 " style="text-align:center;" >
+					   <a href="javaScript:;" @click="click5()" data-toggle="tab" >
+						   <span>5万元</span>
+						   <div>(实盘资金)</div>
+					   </a>
+				   </li>
+				   <li class="col-sm-2 " style="text-align:center;" >
+					   <a href="javaScript:;" @click="click6()" data-toggle="tab" >
+						   <span>6万元</span>
+						   <div>(实盘资金)</div>
+					   </a>
+				   </li>
+				   <li class="col-sm-2 " style="text-align:center;" >
+					   <a href="javaScript:;" @click="click7()" data-toggle="tab" >
+						   <span>10万元</span>
+						   <div>(实盘资金)</div>
+					   </a>
+				   </li>
+				   <li class="col-sm-2 " style="text-align:center;" >
+					   <a href="javaScript:;" @click="click8()" data-toggle="tab" >
+						   <span>50万元</span>
+						   <div>(实盘资金)</div>
+					   </a>
+				   </li>
+				   <li class="col-sm-2 " style="text-align:center;" >
+					   <a href="javaScript:;" @click="click9()" data-toggle="tab" >
+						   <span>100万元</span>
+						   <div>(实盘资金)</div>
+					   </a>
+				   </li>
+			   </ul>
+			   <h5>选择保证金</h5>
+		   </div>
+		   <div id="myTabContent" class="">
+			   <!--第一组-->
+			   <div>
+				   <div class="" id="home">
+					   <ul class="nav nav-tabs" >
+						   <li class="col-sm-3 " style="text-align:center;" @click="clicka()">
+							   <a href="javaScript:;">{{this.a}}元</a>
+						   </li>
+						   <li  class="col-sm-3 " style="text-align:center;" @click="clickb()">
+							   <a href="javaScript:;">{{this.a*2}}元</a>
+						   </li>
+					   </ul>
+				   </div>
+				   <div>
+                       <div class="" id="tab" >
+                           <table class="table table-bordered">
+                               <tr>
+                                   <td style="text-align:center;">主力合约</td>
+                                   <td style="text-align:center;">可交易品种</td>
+                               </tr>
+                               <tr>
+                                   <td style="text-align:center;">操盘金额</td>
+                                   <td style="text-align:center;">1.1万元{{this.c}}</td>
+                               </tr>
+                               <tr>
+                                   <td style="text-align:center;">预警金额</td>
+                                   <td style="text-align:center;">1.05万元{{this.d}}</td>
+                               </tr>
+                               <tr>
+                                   <td style="text-align:center;">止损金额</td>
+                                   <td style="text-align:center;">1.03万元{{this.e}}</td>
+                               </tr>
+                               <tr>
+                                   <td style="text-align:center;">服务费</td>
+                                   <td style="text-align:center;">免服务费</td>
+                               </tr>
+                               <tr>
+                                   <td style="text-align:center;">手续费</td>
+                                   <td style="text-align:center;">商品期货手续费</td>
+                               </tr>
+                               <tr>
+                                   <td style="text-align:center;">操盘时间</td>
+                                   <td style="text-align:center;">开仓时间</td>
+                               </tr>
+                           </table>
+                       </div>
+                   </div>
+			   </div>
+		   </div>
+	   </div>
+	   <div class="container">
+		   <p style="text-align:center;">我已阅读并同意<a href="">《账户委托管理协议》</a></p>
+		   <input class="btn btn-info" value="我要操盘" type="submit">
+	   </div>
+   </div>
+	
+ </body>
+ <script src="pulic_js/vue.js"></script>
+ <script type="text/javascript">
+     var app2=new Vue({
+         el:'#app2'
+         ,data:{
+             a:0,
+			 c:0,
+			 d:0,
+			 e:0,
+             money:1,
+             value:0,
+			 userName:16
+         },
+         methods:{
+             click1(){
+				 this.money=1;
+				 this.a=this.money*1000;
+                 this.c=this.money*10000+this.a;
+				 this.d=this.money*10000+this.a*0.5;
+				 this.e=this.money*10000+this.a*0.3;
+			 },
+             click2(){
+                 this.money=2;
+                 this.a=this.money*1000;
+                 this.c=this.money*10000+this.a;
+                 this.d=this.money*10000+this.a*0.5;
+                 this.e=this.money*10000+this.a*0.3;
+             },
+             click3(){
+                 this.money=3;
+                 this.a=this.money*1000;
+                 this.c=this.money*10000+this.a;
+                 this.d=this.money*10000+this.a*0.5;
+                 this.e=this.money*10000+this.a*0.3;
+             },
+             click4(){
+                 this.money=4;
+                 this.a=this.money*1000;
+                 this.c=this.money*10000+this.a;
+                 this.d=this.money*10000+this.a*0.5;
+                 this.e=this.money*10000+this.a*0.3;
+             },
+             click5(){
+                 this.money=5;
+                 this.a=this.money*1000;
+                 this.c=this.money*10000+this.a;
+                 this.d=this.money*10000+this.a*0.5;
+                 this.e=this.money*10000+this.a*0.3;
+             },
+             click6(){
+                 this.money=6;
+                 this.a=this.money*1000;
+                 this.c=this.money*10000+this.a;
+                 this.d=this.money*10000+this.a*0.5;
+                 this.e=this.money*10000+this.a*0.3;
+             },
+             click7(){
+                 this.money=10;
+                 this.a=this.money*1000;
+                 this.c=this.money*10000+this.a;
+                 this.d=this.money*10000+this.a*0.5;
+                 this.e=this.money*10000+this.a*0.3;y=1;
+             },
+             click8(){
+                 this.money=50;
+                 this.a=this.money*1000;
+                 this.c=this.money*10000+this.a;
+                 this.d=this.money*10000+this.a*0.5;
+                 this.e=this.money*10000+this.a*0.3;
+             },
+             click9(){
+                 this.money=100;
+                 this.a=this.money*1000;
+                 this.c=this.money*10000+this.a;
+                 this.d=this.money*10000+this.a*0.5;
+                 this.e=this.money*10000+this.a*0.3;
+             },
+             clicka(){
+                 this.c=this.money*10000+this.a;
+                 this.d=this.money*10000+this.a*0.5;
+                 this.e=this.money*10000+this.a*0.3;
+			 },
+			 clickb(){
+                 this.c=this.money*10000+this.a*2;
+                 this.d=this.money*10000+this.a*0.5*2;
+                 this.e=this.money*10000+this.a*0.3*2;
+			 }
+         }
+     });
+     Vue.config.productionTip = false
+ </script>
+ <script>
+     var app3=new Vue({
+         el:'#app3'
+         ,data: {
+             userName:'liuyicao'
+		 	}
+         })
+ </script>
+</html>
